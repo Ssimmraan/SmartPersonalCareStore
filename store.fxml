@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.personalcare.controllers.StoreController" spacing="10" stylesheets="@../styles/style.css">
+    <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 10;">
+        <Label text="Store" styleClass="title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Open Cart" onAction="#openCart" styleClass="button"/>
+    </HBox>
+
+    <ScrollPane fitToWidth="true">
+        <GridPane fx:id="productsGrid"/>
+    </ScrollPane>
+</VBox>

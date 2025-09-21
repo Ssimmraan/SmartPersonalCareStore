@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.personalcare.controllers.LoginController" stylesheets="@../styles/style.css">
+    <Label text="Smart Personal Care" styleClass="title"/>
+    <TextField fx:id="usernameField" promptText="Username" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+    <Button text="Login" onAction="#handleLogin" styleClass="button"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Admin:"/>
+        <Label text="admin / admin123" />
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Customer:"/>
+        <Label text="customer / cust123" />
+    </HBox>
+</VBox>

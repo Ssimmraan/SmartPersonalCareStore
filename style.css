@@ -1,0 +1,66 @@
+.root {
+    -fx-background-color: #f5f7fb;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Product Cards */
+.product-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #e0e0e0;
+    -fx-padding: 15;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 6, 0, 0, 3);
+}
+
+.product-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+    -fx-cursor: hand;
+}
+
+.product-name {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.product-price {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6C63FF;
+}
+
+.product-stock {
+    -fx-font-size: 12px;
+    -fx-text-fill: #777777;
+}
+
+/* Buttons */
+.add-to-cart-btn, .button {
+    -fx-background-color: #6C63FF;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 6 14;
+}
+
+.add-to-cart-btn:hover, .button:hover {
+    -fx-background-color: #5349db;
+}
+
+/* Cart Table */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #6C63FF;
+}
+
+.table-view .column-header, .table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
